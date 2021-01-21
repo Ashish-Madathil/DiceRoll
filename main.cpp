@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  int dice = 0;
+  srand(time(0));
+
+  dice = (rand() % 6) + 1;
+  cout << "You rolled a " << dice << " \n";
+  switch (dice)
+  {
+    case 1:
+    cout << "One \n";
+    break;
+
+    case 2:
+    cout << "Two \n";
+    break;
+
+    case 3:
+    cout << "Three" << endl;
+    break;
+
+    case 4:
+    cout << "Four" << endl;
+    break;
+
+    case 5:
+    cout << "Five \n";
+    break;
+
+    case 6:
+    cout << "Six \n";
+    break;
+
+    default:
+    cout << "Invalid \n";
+    break;
+  }
+}
